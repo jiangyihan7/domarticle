@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping list</title>
+</head>
+<body>
+<p title="a gentle remainder">Don't forget to buy this stuff.</p>
+<ul id="purchases">
+    <li>A tin of beans</li>
+    <li class="sale">Cheese</li>
+    <li class="sale important">Milk</li>
+</ul>
+<a href="http://www.baidu.com" class="popup">example</a>
+<div id="hello"></div>
+<script src="scripts/showPic.js"></script>
+<script>
+    var para=document.createElement("p");
+    var hello=document.getElementById("hello");
+    hello.appendChild(para);
+    var text_1=document.createTextNode("This is");
+    para.appendChild(text_1);
+    var e=document.createElement("em");
+    var my=document.createTextNode("my ");
+    e.appendChild(my);
+    para.appendChild(e);
+    var content=document.createTextNode("content");
+    para.appendChild(content);
+</script>
+</body>
+</html>
